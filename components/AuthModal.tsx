@@ -13,6 +13,7 @@ import useAuthModal from "@/hooks/useAuthModal";
 
 import Modal from './Modal';
 
+
 const AuthModal = () => {
   const { session } = useSessionContext();
   const router = useRouter();
@@ -42,7 +43,7 @@ const AuthModal = () => {
     >
       <Auth
         supabaseClient={supabaseClient}
-        providers={['github']}
+        providers={[]}
         magicLink={true}
         appearance={{
           theme: ThemeSupa,
